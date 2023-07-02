@@ -1,0 +1,104 @@
+#map {
+  height: 500px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#map-title {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #0033a0;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.message {
+  display: none;
+  text-align: left;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#ui {
+  max-height: 500px;
+  z-index: 100\0;
+  font-size: 1em;
+  background-color: rgb(249, 243, 233);
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#marker-hover-text {
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  color: black;
+}
+
+#main {
+  font-size: 19px;
+  margin-top: 0px;
+}
+
+#main p {
+  font-size: 0.98em;
+  color: #010101;
+  line-height: 1.3em;
+  columns: 1;
+  column-gap: 4em;
+  column-rule: 1px dashed #dadada;
+}
+
+#footer p {
+  font-size: 0.8em;
+  font-weight: 80;
+  color: #2c2c2c;
+  line-height: 1.3em;
+  columns: 1;
+  column-gap: 4em;
+  column-rule: 1px dashed #dadada;
+}
+
+#footer a {
+  color: rgb(184, 187, 190);
+}
+
+#sectionToToggle {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.custom-button {
+  background-color: #f5f1eb;
+  color: black;
+  font-size: 14px;
+  border: solid;
+  border-color: rgb(230, 217, 199);
+  border-radius: 1px;
+}
+
+.custom-button:hover {
+  background-color: #cfcbc4;
+}

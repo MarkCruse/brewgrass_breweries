@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brewgrass Breweries</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css"
+    />
+    <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="col-lg-12">
+      <div id="map-title">
+        Brewgrass Breweries
+        <p span class="subtitle">
+          Explore and Taste the Spirit of Bluegrass Country
+        </p>
+      </div>
+      <hr />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <div id="none"></div>
+          </div>
+          <div class="col-lg-6">
+            <div id="map"></div>
+          </div>
+          <div class="col-lg-2">
+            <div id="ui">
+              <div id="marker-hover-text"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <div id="none"></div>
+          </div>
+          <div class="col-lg-6">
+            <div id="main">
+              <div class="container mt-5">
+                <button id="toggleButton" class="custom-button">
+                  Open Directions
+                </button>
+
+                <div id="sectionToToggle">
+                  <!--<h2>Navigating the Map</h2>-->
+                  <p>
+                    <strong>Zoom In and Out:</strong>
+                    Use the zoom controls on the map, typically located in the
+                    top-left or top-right corner, to zoom in and out. Zooming in
+                    provides more detailed information, while zooming out gives
+                    you a broader view of the map.
+                    <br />
+                    <br />
+                    <strong>Pan:</strong>
+                    Click and drag the map to pan around. This allows you to
+                    explore different areas of the map that are not currently
+                    visible. Panning is especially useful when the map is zoomed
+                    in, and you want to navigate to a different location.
+                    <br />
+                    <br />
+                    <strong>Hover over/Click on Markers:</strong>
+                    Hover over and click on a marker to get more information
+                    about that location. A popup may appear with details like
+                    the name, address, and description of the place.
+                    <br />
+                    <br />
+                    <strong>Open Marker Clusters:</strong>
+                    The map contains cluster markers, which are colored circles
+                    with the number of breweries in that area. To explore a
+                    cluster, click on it. The cluster will expand, revealing
+                    individual markers within it. This allows you to see more
+                    specific locations that were initially grouped together.
+                  </p>
+                </div>
+                <p>
+                  <br />
+                  Don't miss out on the opportunity to visit these fantastic
+                  breweries in Central Kentucky, where you can enjoy great
+                  beers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <hr />
+          <div class="col-lg-9">
+            <div id="footer">
+              <p style="text-align: right">
+                Map designed by:&nbsp;&nbsp;Mark Cruse
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div id="none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="./custom.js"></script>
+  </body>
+</html>
