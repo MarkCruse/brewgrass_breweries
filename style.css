@@ -71,7 +71,6 @@
 
 #footer p {
   font-size: 0.8em;
-  font-weight: 80;
   color: #2c2c2c;
   line-height: 1.3em;
   columns: 1;
@@ -80,7 +79,15 @@
 }
 
 #footer a {
-  color: rgb(184, 187, 190);
+  color: rgb(85, 85, 85);
+}
+#footer a.footer-link {
+  color: blue;
+  text-decoration: none;
+}
+#footer a.footer-link:hover {
+  color: black;
+  font-weight: bold;
 }
 
 #sectionToToggle {
