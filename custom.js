@@ -2,7 +2,6 @@ var map = L.map("map").setView([38.0336, -84.5149], 14); // Set the initial map 
 
 // Add the Mapbox Streets tile layer
 L.tileLayer(
-  // "https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWRjcnVzZSIsImEiOiJjanZvN25kaHQxdzAxNDhwZjM4NDNvMXV4In0.s4GSawMNB7Jo4Vf7LXKEew",
   "https://api.mapbox.com/styles/v1/mdcruse/cljncp1g700lv01pd8f7g00fj/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWRjcnVzZSIsImEiOiJjanZvN25kaHQxdzAxNDhwZjM4NDNvMXV4In0.s4GSawMNB7Jo4Vf7LXKEew",
   {
     maxZoom: 19,
@@ -19,7 +18,6 @@ var barIcon = L.icon({
   opacity: 0.2,
 });
 
-// Load the GeoJSON data and add clustered markers to the map
 // Load the GeoJSON data and add clustered markers to the map
 fetch("brewgrass_breweries.geojson")
   .then((response) => response.json())
@@ -39,9 +37,6 @@ fetch("brewgrass_breweries.geojson")
         });
         marker.on("mouseover", function (e) {
           document.getElementById("ui").classList.add("highlight-ui");
-          //document.getElementById("ui").style.width = "300px"; // Set the desired width
-          //document.getElementById("main").style.width = "1100px"; // Set the desired width
-
           var description = feature.properties.description + " ";
           var website = feature.properties.website;
           var websiteLink =
@@ -69,7 +64,6 @@ fetch("brewgrass_breweries.geojson")
               break;
             }
           }
-
           if (!hasMarker) {
             // Perform the actions if there is no marker at the clicked location
             // If no marker is found, remove the class, reset the width, and clear the content.
@@ -79,7 +73,6 @@ fetch("brewgrass_breweries.geojson")
             document.getElementById("marker-hover-text").innerHTML = ""; // Clear the content
           }
         });
-
         return marker;
       },
     }).addTo(markers);
