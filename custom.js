@@ -38,13 +38,24 @@ fetch("brewgrass_breweries.geojson")
         marker.on("mouseover", function (e) {
           document.getElementById("ui").classList.add("highlight-ui");
           var description = feature.properties.description + " ";
+
+          var name = "<strong>" + feature.properties.name + "</strong>";
           var website = feature.properties.website;
           var websiteLink =
-            '<a href="' + website + '" target="_blank">Brewery website.</a>';
-          var name = "<strong>" + feature.properties.name + "</strong><br><br>";
+            '<a href="' +
+            website +
+            '" target="_blank" style="text-decoration: none;"><br> Visit the ' +
+            name +
+            " website.</a>";
+          var nameLink =
+            '<a href="' +
+            website +
+            '" target="_blank" style="text-decoration: none;">' +
+            name +
+            "</a><br><br>";
           var content =
             '<div class="desc-content">' +
-            name +
+            nameLink +
             description +
             websiteLink +
             "</div>";

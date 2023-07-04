@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(249, 243, 233);
+}
+
 #map {
   height: 500px;
   margin-top: 10px;
@@ -52,7 +56,7 @@
   font-size: 16px;
   font-weight: normal;
   text-align: left;
-  color: black;
+  color: #053397;
 }
 
 #main {
@@ -62,11 +66,14 @@
 
 #main p {
   font-size: 0.98em;
-  color: #010101;
   line-height: 1.3em;
   columns: 1;
   column-gap: 4em;
   column-rule: 1px dashed #dadada;
+  text-align: left;
+  color: #0033a0;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 #footer p {
@@ -98,14 +105,14 @@
 }
 
 .custom-button {
-  background-color: #f5f1eb;
+  background-color: rgb(249, 243, 233);
   color: black;
   font-size: 14px;
   border: solid;
   border-color: rgb(230, 217, 199);
-  border-radius: 1px;
+  border-radius: 10px;
 }
 
 .custom-button:hover {
-  background-color: #cfcbc4;
+  background-color: #fffffe;
 }
