@@ -82,6 +82,7 @@ fetch("brewgrass_breweries.geojson")
             document.getElementById("ui").style.width = ""; // Reset the width
             document.getElementById("main").style.width = ""; // Reset the width
             document.getElementById("marker-hover-text").innerHTML = ""; // Clear the content
+            map.setView([38.0336, -84.5149], 9); // Zoom the map out
           }
         });
         return marker;
