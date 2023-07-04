@@ -111,6 +111,7 @@ body {
   border: solid;
   border-color: rgb(230, 217, 199);
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* drop shadow effect */
 }
 
 .custom-button:hover {
