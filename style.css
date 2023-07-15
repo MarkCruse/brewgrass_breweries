@@ -76,6 +76,15 @@ body {
   font-weight: normal;
 }
 
+a:hover {
+  font-weight: bold;
+}
+
+a:visited {
+  color: #0033a0;
+  text-decoration: none;
+}
+
 #footer p {
   font-size: 0.8em;
   color: #2c2c2c;
@@ -89,7 +98,7 @@ body {
   color: rgb(85, 85, 85);
 }
 #footer a.footer-link {
-  color: blue;
+  color: #0033a0;
   text-decoration: none;
 }
 #footer a.footer-link:hover {
