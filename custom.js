@@ -1,15 +1,14 @@
 var map = L.map("map").setView([38.0336, -84.5149], 14); // Set the initial map center and zoom level
 
 // Add the Mapbox Streets tile layer
-L.tileLayer(
-  "https://api.mapbox.com/styles/v1/mdcruse/cljncp1g700lv01pd8f7g00fj/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWRjcnVzZSIsImEiOiJjbTZtOTVocGEwYnFyMnFxNXdndzJheW9vIn0.lJ9K99heIvPDCABZwrcsdQ",
-  {
-    maxZoom: 19,
-    attribution: 'Map data &copy; <a href="https://www.mapbox.com/">Mapbox</a>',
-    tileSize: 512,
-    zoomOffset: -1,
-  }
-).addTo(map);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+  id: 'mapbox/streets-v11',
+  tileSize: 512,
+  zoomOffset: -1,
+  accessToken: 'pk.eyJ1IjoibWRjcnVzZSIsImEiOiJjbTZtOTVocGEwYnFyMnFxNXdndzJheW9vIn0.lJ9K99heIvPDCABZwrcsdQ',
+  attribution: 'Map data &copy; <a href="https://www.mapbox.com/">Mapbox</a>'
+}).addTo(map);
+
 
 // create custom icon
 var barIcon = L.icon({
