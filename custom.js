@@ -2,7 +2,7 @@ var map = L.map("map").setView([38.0336, -84.5149], 14); // Set the initial map 
 
 // Add the Mapbox Streets tile layer
 L.tileLayer(
-  "https://api.mapbox.com/styles/v1/mdcruse/cljncp1g700lv01pd8f7g00fj/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWRjcnVzZSIsImEiOiJjbTZtOTVocGEwYnFyMnFxNXdndzJheW9vIn0.lJ9K99heIvPDCABZwrcsdQ",
+  "https://api.mapbox.com/styles/v1/mdcruse/cljncp1g700lv01pd8f7g00fj.html?title=view&access_token=pk.eyJ1IjoibWRjcnVzZSIsImEiOiJjbTlvZGljZmIweWFmMmlwdjhxc3d0anl2In0.uPUj9yZh0yPjwjiApe7bOw",
   {
     maxZoom: 19,
     attribution: 'Map data &copy; <a href="https://www.mapbox.com/">Mapbox</a>',
